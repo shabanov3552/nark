@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Регистрация</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221125234759">
+	<link rel="apple-touch-icon" sizes="180x180" href="files/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
+	<link rel="manifest" href="files/site.webmanifest">
+	<link rel="mask-icon" href="files/safari-pinned-tab.svg" color="#666666">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css?_v=20221125234759" />
+
+</head>
+
+<body>
+	<div class="wrapper">
+
+
+		<div class="reg-form">
+			<div class="reg-form__container">
+				<div class="reg-form__content">
+					<div class="reg-form__header">
+						<div class="reg-form__title text_l">Онлайн-регистрация на семинар</div>
+						<!-- <button data-close type="button" class="reg-form__close">
+							<svg class="reg-form__close-svg">
+								<use xlink:href="img/icons/icons.svg#svg-Close"></use>
+							</svg>
+						</button> -->
+					</div>
+					<div data-tabs class="reg-form__main">
+						<nav data-tabs-titles class="reg-form__navigation">
+							<button type="button" class="reg-form__tab-btn _tab-active">Организация</button>
+							<button type="button" class="reg-form__tab-btn">Частное лицо</button>
+						</nav>
+						<div data-tabs-body class="reg-form__content">
+							<div class="reg-form__body">
+
+								<form data-dev action="" method="" id="legalEntity" class="reg-form__form-steps steps-form">
+
+									<div class="steps-form__numbers">
+
+										<div class="progress">
+											<div class="progress__success"></div>
+										</div>
+
+										<div class="steps-form__number">
+											<svg class="steps-form__number-succsess-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Check_Mark"></use>
+											</svg>
+											<div class="steps-form__number-name">
+												Организация
+											</div>
+										</div>
+										<div class="steps-form__number">
+											<svg class="steps-form__number-succsess-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Check_Mark"></use>
+											</svg>
+											<div class="steps-form__number-name">
+												Руководитель
+											</div>
+										</div>
+										<div class="steps-form__number">
+											<svg class="steps-form__number-succsess-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Check_Mark"></use>
+											</svg>
+											<div class="steps-form__number-name">
+												Реквизиты
+											</div>
+										</div>
+										<div class="steps-form__number">
+											<svg class="steps-form__number-succsess-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Check_Mark"></use>
+											</svg>
+											<div class="steps-form__number-name">
+												Контактное лицо
+											</div>
+										</div>
+										<div class="steps-form__number">
+											<svg class="steps-form__number-succsess-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Check_Mark"></use>
+											</svg>
+											<div class="steps-form__number-name">
+												Участник
+											</div>
+										</div>
+										<div class="counter">
+											<span class="counter__title">Шаг</span>
+											<span class="counter__numbers">
+
+											</span>
+										</div>
+									</div>
+
+									<div class="steps-form__steps">
+										<div class="steps-form__step step-form">
+											<div class="step-form__header">
+												<div class="step-form__title">Организация*</div>
+												<div class="step-form__subtitle">Все поля обязательны к заполнению</div>
+											</div>
+											<div class="step-form__center">
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Наименование</div>
+														<input data-required autocomplete="off" type="text" placeholder="Наименование" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Адреса</div>
+														<input data-required autocomplete="off" type="text" placeholder="Адрес организации" class="step-form__input">
+														<input data-required autocomplete="off" type="text" placeholder="Юридический адрес" class="step-form__input">
+														<input data-required autocomplete="off" type="text" placeholder="Почтовый адрес" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Сфера деятельности</div>
+														<select data-required data-show-selected data-class-modif="step-form" class="step-form__select">
+															<option value="" selected>Сфера деятельности</option>
+															<option value="1">Образовательная организация</option>
+															<option value="2">Профессиональная образовательная организация</option>
+															<option value="3">Образовательная организация доп.образования</option>
+															<option value="4">Образовательная организация высшего образования</option>
+															<option value="5">Другая организация</option>
+															<option value="6">СПК</option>
+														</select>
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Телефон</div>
+														<input data-required autocomplete="off" type="tel" placeholder="+7 (495) 123-12-12" class="step-form__input js_phone">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Нужные документы</div>
+														<div class="step-form__file-upload">
+															<input type="file" name="" id="fileLegal">
+														</div>
+
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="steps-form__step step-form">
+											<div class="step-form__header">
+												<div class="step-form__title">Руководитель*</div>
+												<div class="step-form__subtitle">Все поля обязательны к заполнению</div>
+											</div>
+											<div class="step-form__center">
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">ФИО</div>
+														<input data-required autocomplete="off" type="text" placeholder="ФИО" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Должность</div>
+														<input data-required autocomplete="off" type="text" placeholder="Должность" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Действует на основании</div>
+														<select data-required data-show-selected data-class-modif="step-form" class="step-form__select">
+															<option value="" selected>Действует на основании</option>
+															<option value="1">Устава</option>
+															<option value="2">Доверенности</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="steps-form__step step-form">
+											<div class="step-form__header">
+												<div class="step-form__title">Платежные реквизиты*</div>
+												<div class="step-form__subtitle">Все поля обязательны к заполнению</div>
+											</div>
+											<div class="step-form__center">
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Банк</div>
+														<input data-required autocomplete="off" type="text" placeholder="Наименование" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Расчетный счет</div>
+														<input data-required autocomplete="off" type="text" placeholder="Расчетный счет" class="step-form__input">
+													</div>
+													<div class="step-form__item">
+														<div class="step-form__name">Корпоративный счёт</div>
+														<input data-required autocomplete="off" type="text" placeholder="111 22 333 4 5555 6666666" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">ИНН</div>
+														<input data-required autocomplete="off" type="text" placeholder="123456789123" class="step-form__input">
+													</div>
+													<div class="step-form__item">
+														<div class="step-form__name">КПП</div>
+														<input data-required autocomplete="off" type="text" placeholder="123456789" class="step-form__input">
+													</div>
+													<div class="step-form__item">
+														<div class="step-form__name">БИК</div>
+														<input data-required autocomplete="off" type="text" placeholder="123456789" class="step-form__input">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="steps-form__step step-form">
+											<div class="step-form__header">
+												<div class="step-form__title">Контактное лицо*</div>
+												<div class="step-form__subtitle">Все поля обязательны к заполнению</div>
+											</div>
+											<div class="step-form__center">
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">ФИО</div>
+														<input data-required autocomplete="off" type="text" placeholder="ФИО" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Должность</div>
+														<input data-required autocomplete="off" type="text" placeholder="Должность" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Телефон</div>
+														<input data-required autocomplete="off" type="tel" placeholder="+7 (495) 123-12-12" class="step-form__input js_phone">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Email</div>
+														<input data-required="email" autocomplete="off" type="email" placeholder="email@email.com" class="step-form__input">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="steps-form__step step-form">
+											<div class="step-form__header">
+												<div class="step-form__title">Участник*</div>
+												<div class="step-form__subtitle">Все поля обязательны к заполнению</div>
+											</div>
+											<div data-spollers class="step-form__center spollers">
+												<div class="step-form__player-data">
+													<div class="step-form__row-name">
+														Личные данные
+													</div>
+													<div class="step-form__row">
+														<div class="step-form__item step-form__item_auto">
+															<div class="step-form__name">ФИО</div>
+															<input data-required autocomplete="off" type="text" name="fio" placeholder="ФИО" class="step-form__input js_player-name">
+														</div>
+														<div class="step-form__radio-item">
+															<div class="step-form__name">Пол</div>
+															<div class="step-form__radio-wrapper">
+																<input data-required checked type="radio" value="male" name="gender" id="male" class="step-form__radio-input">
+																<label for="male" class="step-form__radio-label">Мужской</label>
+																<input data-required type="radio" value="female" name="gender" id="female" class="step-form__radio-input">
+																<label for="female" class="step-form__radio-label">Женский</label>
+															</div>
+														</div>
+													</div>
+													<div class="step-form__row">
+														<div class="step-form__item">
+															<div class="step-form__name">Дата рождения</div>
+															<input data-required autocomplete="off" type="date" placeholder="01.01 2021" class="step-form__input">
+														</div>
+														<div class="step-form__item">
+															<div class="step-form__name">СНИЛС</div>
+															<input data-required autocomplete="off" type="text" placeholder="СНИЛС" class="step-form__input">
+														</div>
+													</div>
+													<div class="step-form__row">
+														<div class="step-form__item">
+															<div class="step-form__name">Email</div>
+															<input data-required="email" autocomplete="off" type="email" placeholder="email@email.com" class="step-form__input">
+														</div>
+														<div class="step-form__item">
+															<div class="step-form__name">Телефон</div>
+															<input data-required autocomplete="off" type="tel" placeholder="+7 (495) 123-12-12" class="step-form__input js_phone">
+														</div>
+													</div>
+													<div class="step-form__row-name">
+														Образование
+													</div>
+													<div class="step-form__row">
+														<div class="step-form__item step-form__item_auto">
+															<div class="step-form__name">Образовательная организация</div>
+															<input data-required autocomplete="off" type="text" placeholder="Наименование" class="step-form__input">
+														</div>
+														<div class="step-form__item step-form__item_last">
+															<div class="step-form__name">Серия и номер диплома</div>
+															<input data-required autocomplete="off" type="text" placeholder="Серия, номер" class="step-form__input">
+														</div>
+													</div>
+													<div class="step-form__row">
+														<div class="step-form__item">
+															<div class="step-form__name">Год окончания обучения</div>
+															<input data-required autocomplete="off" type="date" placeholder="2021" class="step-form__input">
+														</div>
+														<div class="step-form__item">
+															<div class="step-form__name">Вид образования</div>
+															<select data-required data-show-selected data-class-modif="step-form" class="step-form__select">
+																<option value="" selected>Вид образования</option>
+																<option value="1">Высшее</option>
+																<option value="2">Среднее</option>
+															</select>
+														</div>
+													</div>
+													<div class="step-form__row">
+														<div class="step-form__item">
+															<div class="step-form__name">Должность</div>
+															<input data-required autocomplete="off" type="text" placeholder="Должность" class="step-form__input">
+														</div>
+														<div class="step-form__item">
+															<div class="step-form__name">Стаж</div>
+															<input data-required autocomplete="off" type="text" placeholder="00" class="step-form__input">
+														</div>
+													</div>
+												</div>
+												<button type="button" class="step-form__add-player btn btn__label-sml-wht">Добавить участника</button>
+											</div>
+											<div class="checkbox step-form__checkbox">
+												<input data-required id="c_1" data-error="" class="checkbox__input" type="checkbox" value="1" name="">
+												<label for="c_1" class="checkbox__label"><span class="checkbox__text">Я даю согласие на обработку персональных данных</span></label>
+											</div>
+											<div class="checkbox step-form__checkbox">
+												<input data-required id="c_2" data-error="" class="checkbox__input" type="checkbox" value="2" name="">
+												<label for="c_2" class="checkbox__label"><span class="checkbox__text">Я принимаю условия <a href="" class="checkbox__link">Политики конфиденциальности</a></span></label>
+											</div>
+										</div>
+									</div>
+
+									<div class="steps-form__buttons">
+										<button type="button" class="steps-form__btn-prev">
+											<svg class="steps-form__btn-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Arrow_Slide_Left"></use>
+											</svg>
+										</button>
+										<button type="button" class="steps-form__btn-next">
+											<span class="steps-form__btn-span">Далее</span>
+											<svg class="steps-form__btn-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Arrow_Right"></use>
+											</svg>
+										</button>
+										<button hidden type="submit" class="steps-form__btn-send">
+											<span class="steps-form__btn-span">Отправить</span>
+											<svg class="steps-form__btn-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Arrow_Right"></use>
+											</svg>
+										</button>
+									</div>
+
+								</form>
+
+							</div>
+							<div class="reg-form__body">
+
+								<form data-dev action="" method="" id="privatePerson" class="reg-form__form-steps steps-form">
+
+									<div class="steps-form__numbers">
+
+										<div class="progress">
+											<div class="progress__success"></div>
+										</div>
+
+										<div class="steps-form__number">
+											<svg class="steps-form__number-succsess-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Check_Mark"></use>
+											</svg>
+											<div class="steps-form__number-name">
+												Участник
+											</div>
+										</div>
+										<div class="steps-form__number">
+											<svg class="steps-form__number-succsess-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Check_Mark"></use>
+											</svg>
+											<div class="steps-form__number-name">
+												Образование
+											</div>
+										</div>
+										<div class="steps-form__number">
+											<svg class="steps-form__number-succsess-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Check_Mark"></use>
+											</svg>
+											<div class="steps-form__number-name">
+												Работа
+											</div>
+										</div>
+										<div class="counter">
+											<span class="counter__title">Шаг</span>
+											<span class="counter__numbers">
+
+											</span>
+										</div>
+									</div>
+
+									<div class="steps-form__steps">
+										<div class="steps-form__step step-form">
+											<div class="step-form__center">
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Какое событие вы планируете посетить?</div>
+														<select data-required data-show-selected data-class-modif="step-form" class="step-form__select">
+															<option value="" selected>Выберите семинар*</option>
+															<option value="1">Первое</option>
+															<option value="2">Второе</option>
+															<option value="3">Третье</option>
+														</select>
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Почтовый адрес</div>
+														<input autocomplete="off" type="text" placeholder="Почтовый адрес" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">ФИО</div>
+														<input data-required autocomplete="off" type="text" placeholder="ФИО" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">СНИЛС</div>
+														<input autocomplete="off" type="text" placeholder="СНИЛС" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__radio-item step-form__item">
+														<div class="step-form__name">Пол</div>
+														<div class="step-form__radio-wrapper">
+															<input data-required checked type="radio" value="male" name="privateGender" id="privateMale" class="step-form__radio-input">
+															<label for="privateMale" class="step-form__radio-label">Мужской</label>
+															<input data-required type="radio" value="female" name="privateGender" id="privateFemale" class="step-form__radio-input">
+															<label for="privateFemale" class="step-form__radio-label">Женский</label>
+														</div>
+													</div>
+													<div class="step-form__item">
+														<div class="step-form__name">Дата рождения</div>
+														<input autocomplete="off" type="date" name="" placeholder="" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Телефон</div>
+														<input data-required autocomplete="off" type="tel" placeholder="+7 (495) 123-12-12" class="step-form__input js_phone">
+													</div>
+													<div class="step-form__item">
+														<div class="step-form__name">Email</div>
+														<input data-required="email" autocomplete="off" type="email" placeholder="email@email.com" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Нужные документы</div>
+														<ul class="step-form__list">
+															<li class="step-form__list-item">Паспорт (основная страница + регистрация)</li>
+															<li class="step-form__list-item">Основной диплом об образовании с приложением</li>
+															<li class="step-form__list-item">Свидетельство о браке(если в дипломе другая фамилия)</li>
+															<li class="step-form__list-item">СНИЛС</li>
+														</ul>
+														<div class="step-form__file-upload">
+															<input type="file" name="" id="filePrivate">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="steps-form__step step-form">
+											<div class="step-form__center">
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Обр. Организация</div>
+														<input data-required autocomplete="off" type="text" placeholder="Обр. Организация" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Год окончания</div>
+														<input data-required autocomplete="off" type="date" placeholder="" class="step-form__input">
+													</div>
+													<div class="step-form__item">
+														<div class="step-form__name">Вид образования</div>
+														<select data-required data-show-selected data-class-modif="step-form" class="step-form__select">
+															<option value="" selected>Вид образования</option>
+															<option value="1">Высшее</option>
+															<option value="2">Среднее</option>
+														</select>
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Серия диплома</div>
+														<input data-required autocomplete="off" type="text" placeholder="Серия диплома" class="step-form__input">
+													</div>
+													<div class="step-form__item">
+														<div class="step-form__name">Номер диплома</div>
+														<input data-required autocomplete="off" type="text" placeholder="Номер диплома" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Фамилия в дипломе</div>
+														<input data-required autocomplete="off" type="text" placeholder="Фамилия в дипломе" class="step-form__input">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="steps-form__step step-form">
+											<div class="step-form__center">
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Место работы</div>
+														<input data-required autocomplete="off" type="text" placeholder="Место работы" class="step-form__input">
+													</div>
+												</div>
+												<div class="step-form__row">
+													<div class="step-form__item">
+														<div class="step-form__name">Стаж</div>
+														<input data-required autocomplete="off" type="text" placeholder="Стаж" class="step-form__input">
+													</div>
+													<div class="step-form__item">
+														<div class="step-form__name">Должность</div>
+														<input data-required autocomplete="off" type="text" placeholder="Должность" class="step-form__input">
+													</div>
+												</div>
+												<div class="checkbox step-form__checkbox">
+													<input data-required id="c_3" data-error="" class="checkbox__input" type="checkbox" value="1" name="">
+													<label for="c_3" class="checkbox__label"><span class="checkbox__text">Я даю согласие на обработку персональных данных</span></label>
+												</div>
+												<div class="checkbox step-form__checkbox">
+													<input data-required id="c_4" data-error="" class="checkbox__input" type="checkbox" value="2" name="">
+													<label for="c_4" class="checkbox__label"><span class="checkbox__text">Я принимаю условия <a href="" class="checkbox__link">Политики конфиденциальности</a></span></label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="steps-form__buttons">
+										<button type="button" class="steps-form__btn-prev">
+											<svg class="steps-form__btn-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Arrow_Slide_Left"></use>
+											</svg>
+										</button>
+										<button type="button" class="steps-form__btn-next">
+											<span class="steps-form__btn-span">Далее</span>
+											<svg class="steps-form__btn-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Arrow_Right"></use>
+											</svg>
+										</button>
+										<button hidden type="submit" class="steps-form__btn-send">
+											<span class="steps-form__btn-span">Отправить</span>
+											<svg class="steps-form__btn-icon">
+												<use xlink:href="img/icons/icons.svg#svg-Arrow_Right"></use>
+											</svg>
+										</button>
+									</div>
+
+								</form>
+
+							</div>
+						</div>
+					</div>
+					<div class="reg-form__finish" hidden>
+						<div class="reg-form__finish-title">Ваша заявка отправлена!</div>
+						<div class="reg-form__finish-subtitle">Мы рассмотрим вашу заявку и вы получите ответ на указанную почту в течение 24 часов.</div>
+						<a href="/" class="reg-form__finish-btn">Готово</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+
+		</script>
+
+		<!-- <script>
+			// ************************ Drag and drop ***************** //
+			let dropArea = document.getElementById("drop-area")
+
+				// Prevent default drag behaviors
+				;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+					dropArea.addEventListener(eventName, preventDefaults, false)
+					document.body.addEventListener(eventName, preventDefaults, false)
+				})
+
+				// Highlight drop area when item is dragged over it
+				;['dragenter', 'dragover'].forEach(eventName => {
+					dropArea.addEventListener(eventName, highlight, false)
+				})
+
+				;['dragleave', 'drop'].forEach(eventName => {
+					dropArea.addEventListener(eventName, unhighlight, false)
+				})
+
+			// Handle dropped files
+			dropArea.addEventListener('drop', handleDrop, false)
+
+			function preventDefaults(e) {
+				e.preventDefault()
+				e.stopPropagation()
+			}
+
+			function highlight(e) {
+				dropArea.classList.add('highlight')
+			}
+
+			function unhighlight(e) {
+				dropArea.classList.remove('highlight')
+			}
+
+			function handleDrop(e) {
+				var dt = e.dataTransfer
+				var files = dt.files
+
+				handleFiles(files)
+			}
+
+			// let uploadProgress = []
+			// let progressBar = document.getElementById('progress-bar')
+
+			// function initializeProgress(numFiles) {
+			// 	progressBar.value = 0
+			// 	uploadProgress = []
+
+			// 	for (let i = numFiles; i > 0; i--) {
+			// 		uploadProgress.push(0)
+			// 	}
+			// }
+
+			// function updateProgress(fileNumber, percent) {
+			// 	uploadProgress[fileNumber] = percent
+			// 	let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length
+			// 	progressBar.value = total
+			// }
+
+			function handleFiles(files) {
+				files = [...files]
+				// initializeProgress(files.length)
+				files.forEach(uploadFile)
+				files.forEach(previewFile)
+			}
+
+			function previewFile(file) {
+				let reader = new FileReader()
+				reader.readAsDataURL(file)
+				reader.onloadend = function () {
+					let li = document.createElement('li');
+
+					li.setAttribute('class', 'step-form__uploaded-file-item');
+
+					li.innerHTML = `
+			<svg class="step-form__uploaded-file-icon">
+				<use xlink:href="img/icons/icons.svg#svg-PDF"></use>
+			</svg>
+			<span class="step-form__uploaded-file-name">${file.name}</span>`
+					document.getElementById('uploaded-files').appendChild(li)
+				}
+			}
+
+
+
+			function uploadFile(file, i) {
+				var url = ''
+				var xhr = new XMLHttpRequest()
+				var formData = new FormData()
+				xhr.open('POST', url, true)
+				xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+
+				// // Update progress (can be used to show progress indicator)
+				// xhr.upload.addEventListener("progress", function (e) {
+				// 	updateProgress(i, (e.loaded * 100.0 / e.total) || 100)
+				// })
+
+				// xhr.addEventListener('readystatechange', function (e) {
+				// 	if (xhr.readyState == 4 && xhr.status == 200) {
+				// 		updateProgress(i, 100) // <- Add this
+				// 	}
+				// 	else if (xhr.readyState == 4 && xhr.status != 200) {
+				// 		// Error. Inform the user
+				// 	}
+				// })
+
+				formData.append('upload_preset', 'ujpu6gyk')
+				formData.append('file', file)
+				xhr.send(formData)
+			}
+		</script> -->
+
+
+	</div>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js?_v=20221125234759"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js?_v=20221125234759"></script>
+	<script src="js/app.min.js?_v=20221125234759"></script>
+</body>
+
+</html>
